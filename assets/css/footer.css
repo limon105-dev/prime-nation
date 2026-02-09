@@ -3,6 +3,10 @@
     background-color: var(--section-bg2);
 }
 
+.footer-section.product-page-footer{
+    margin-bottom: 90px;
+}
+
 .footer-items {
     display: flex;
     justify-content: space-between;

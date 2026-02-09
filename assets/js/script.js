@@ -472,11 +472,15 @@ var swiper = new Swiper(".product-slider-thumb", {
 });
 var swiper2 = new Swiper(".product-slider", {
   loop: true,
-  autoHeight: true,
+  // autoHeight: true,
   spaceBetween: 10,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".product-slider-pagination",
+    clickable: true,
   },
   thumbs: {
     swiper: swiper,

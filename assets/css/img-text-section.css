@@ -65,6 +65,15 @@
     width: fit-content;
 }
 
+.img-text-section.img-text-section-reverse .img-text-section-wrapper .img-text-section-content .img-text-section-content-list li {
+    padding: 0 20px 10px 0;
+}
+
+.img-text-section.img-text-section-reverse .img-text-section-wrapper .img-text-section-content .img-text-section-content-list li::before {
+    right: 0;
+    left: auto;
+}
+
 .img-text-section-content-list li:last-child {
     margin: 0;
 }
