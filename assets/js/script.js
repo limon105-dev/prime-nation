@@ -34,16 +34,12 @@ $(document).ready(function () {
 
     if (isMobile) {
       // **..mobile-dropdown-accordion js start..**
-      $(".navbar-link-content").slideUp();
+      $(".navbar-link-content").slideDown();
+      $(".navbar-link-title").parent().toggleClass("active");
       $(".navbar-link-title").on("click", function () {
         $(this).next(".navbar-link-content").slideToggle();
         $(this).parent().toggleClass("active");
-        $(this)
-          .parent()
-          .siblings()
-          .removeClass("active")
-          .find(".navbar-link-content")
-          .slideUp();
+        $(this).parent().siblings().removeClass("active").find(".navbar-link-content").slideUp();
       });
       // **..mobile-dropdown-accordion js end..**
     }
@@ -55,7 +51,9 @@ $(document).ready(function () {
       ).matches;
 
       if (isMobile) {
-        $(".dropdown-sub-menu").slideUp();
+        $(".dropdown-sub-menu").slideDown();
+        $(".dropdown-btn1").addClass("active");
+         $(".dropdown-btn2").addClass("active");
         // **..mobile-dropdown-accordion js start..**
         $(".dropdown-btn1").on("click", function () {
           $(this).next(".dropdown-sub-menu1").slideToggle();

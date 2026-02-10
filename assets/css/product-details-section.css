@@ -360,7 +360,7 @@
     cursor: pointer;
     background-color: var(--white);
     display: block;
-    padding: 8px;
+    padding: 8px 6px;
     border: 1px solid var(--black);
     text-align: center;
     user-select: none;
