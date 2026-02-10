@@ -6,6 +6,7 @@
     width: 100%;
     background-color: var(--brand-color);
     padding: 8px 0;
+    z-index: 999;
 }
 
 .marquee-content-item .topbar-text {
