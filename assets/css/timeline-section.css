@@ -23,7 +23,7 @@
     top: 0;
     height: 100%;
     width: 2px;
-    background: linear-gradient(to bottom, rgb(248 245 240) 0%, rgb(224 49 40) 50%, rgb(248 245 240) 100%);
+    background: linear-gradient(to bottom, rgb(248 245 240) 0%, rgb(0, 0, 0) 50%, rgb(248 245 240) 100%);
     z-index: -1;
 }
 
