@@ -142,7 +142,7 @@ $(document).ready(function () {
   // --grid-tab js end--
 
   // product-slider modal js start--
-  $(".product-slider").click(function (event) {
+  $(".product-slider .swiper-wrapper").click(function (event) {
     event.stopPropagation();
     $(".product-slider-modal").addClass("active");
   });
@@ -320,132 +320,6 @@ $(function () {
     });
 });
 // btn js ---
-
-// collection-tab-slide js start--
-var swiper = new Swiper(".collection-tab-slide", {
-  slidesPerView: 4,
-  spaceBetween: 20,
-  grabCursor: true,
-  loop: false,
-  navigation: {
-    nextEl: ".collection-tab-slide-button-next",
-    prevEl: ".collection-tab-slide-button-prev",
-  },
-  breakpoints: {
-    // when window width is >= 1px
-    1: {
-      spaceBetween: 10,
-      slidesPerView: 1.7,
-    },
-    // when window width is >= 430px
-    576: {
-      spaceBetween: 20,
-      slidesPerView: 2.3,
-    },
-    // when window width is >= 767px
-    768: {
-      spaceBetween: 20,
-      slidesPerView: 3.2,
-    },
-    // when window width is >= 767px
-    993: {
-      spaceBetween: 20,
-      slidesPerView: 4,
-    },
-  },
-});
-// collection-tab-slide js end--
-
-// card-slider js start--
-var swiper = new Swiper(".card-slider", {
-  slidesPerView: 4,
-  spaceBetween: 20,
-  grabCursor: true,
-  loop: false,
-  navigation: {
-    nextEl: ".card-slider-button-next",
-    prevEl: ".card-slider-button-prev",
-  },
-  breakpoints: {
-    // when window width is >= 1px
-    1: {
-      spaceBetween: 10,
-      slidesPerView: 1.7,
-    },
-    // when window width is >= 430px
-    576: {
-      spaceBetween: 20,
-      slidesPerView: 2.3,
-    },
-    // when window width is >= 767px
-    768: {
-      spaceBetween: 20,
-      slidesPerView: 3.2,
-    },
-    // when window width is >= 767px
-    993: {
-      spaceBetween: 20,
-      slidesPerView: 4,
-    },
-  },
-});
-// card-slider js end--
-
-// video-review-slider js start--
-var video_review_slider = new Swiper(".video-review-slider", {
-  loop: true,
-  speed: 500,
-  autoplay: {
-    delay: 2000,
-  },
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 80,
-    depth: 200,
-    modifier: 1,
-    slideShadows: false,
-  },
-});
-// video-review-slider js end--
-
-// related-product-slider js start--
-var swiper = new Swiper(".related-product-slider", {
-  slidesPerView: 4,
-  spaceBetween: 20,
-  grabCursor: true,
-  loop: false,
-  navigation: {
-    nextEl: ".related-product-slider-btn-next",
-    prevEl: ".related-product-slider-btn-prev",
-  },
-  breakpoints: {
-    // when window width is >= 1px
-    1: {
-      spaceBetween: 10,
-      slidesPerView: 1.7,
-    },
-    // when window width is >= 430px
-    576: {
-      spaceBetween: 20,
-      slidesPerView: 2.3,
-    },
-    // when window width is >= 767px
-    768: {
-      spaceBetween: 20,
-      slidesPerView: 3.2,
-    },
-    // when window width is >= 767px
-    993: {
-      spaceBetween: 20,
-      slidesPerView: 4,
-    },
-  },
-});
-// related-product-slider js end--
 
 // side-cart-slider js start--
 var swiper = new Swiper(".side-cart-slider", {
