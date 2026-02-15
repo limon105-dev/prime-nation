@@ -1,4 +1,8 @@
 /* policy-section css start */
+.section.policy-section {
+    margin: 110px 0 0 0;
+}
+
 .policy-section .section-heading-text {
     max-width: 700px;
 }
@@ -73,6 +77,12 @@
 }
 
 /* policy-section css end */
+
+@media only screen and (max-width: 992px) {
+    .section.policy-section {
+        margin: 94px 0 0 0;
+    }
+}
 
 @media only screen and (max-width: 575px) {
     .policy-content-items {

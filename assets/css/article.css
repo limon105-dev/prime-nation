@@ -1,6 +1,8 @@
 /* article-section css start */
-.article-section {
-    padding: 0 0 50px 0;
+.article-breadcrumb {
+    padding: 20px 0;
+    background: var(--section-bg);
+    margin: 110px 0 0 0;
 }
 
 .article-breadcrumb {
@@ -374,6 +376,10 @@
 @media only screen and (max-width: 992px) {
 
     /* article-section css start */
+    .article-breadcrumb {
+        margin: 94px 0 0 0;
+    }
+
     .article-content-wrapper {
         grid-template-columns: repeat(1, 1fr);
         gap: 40px;

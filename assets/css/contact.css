@@ -1,4 +1,8 @@
     /* contact section css start */
+    .contact-section.return-contact {
+        margin: 110px 0 0 0;
+    }
+
     .contact-form {
         max-width: 800px;
         margin: 0 auto;
@@ -53,6 +57,17 @@
     }
 
     /* contact section css end */
+
+    @media only screen and (max-width: 992px) {
+
+        /* contact section css start */
+        .contact-section.return-contact {
+            margin: 94px 0 0 0;
+        }
+
+        /* contact section css end */
+    }
+
 
     @media only screen and (max-width: 767px) {
 
