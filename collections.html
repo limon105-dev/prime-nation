@@ -524,19 +524,7 @@
 			<div class="container">
 				<div class="common-banner-content">
 					<div class="section-heading-wrapper">
-						<h2 class="section-heading">Collections</h2>
-						<ul class="breadcrumb">
-							<li><a href="index.html">Home</a> <span class="breadcrumb-icon">
-									<svg aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 10 6">
-										<path fill-rule="evenodd" clip-rule="evenodd"
-											d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
-											fill="black">
-										</path>
-									</svg>
-								</span>
-							</li>
-							<li><span class="active">Collections</span> <span class="breadcrumb-icon"></span></li>
-						</ul>
+						<h2 class="section-heading">All Collections<span class="count">74</span></h2>
 					</div>
 				</div>
 			</div>
@@ -860,14 +848,18 @@
 					</div>
 					<div class="collection-content">
 						<div class="collection-top">
-							<div class="collection-filter-btn">
-								<span class="filter-open-btn btn"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-										focusable="false" role="presentation" viewBox="0 0 24 24" width="1em" height="1em">
-										<path d="M21,4v2h-1l-6,9v7h-4v-7L4,6h-1v-2H21Z"></path>
-									</svg> Filter</span>
-								<p class="collection-product-count">7 products</p>
-							</div>
-							<div class="collection-top-right">
+							<div class="collection-grid-varient">
+								<div class="filter-select-field">
+									<span class="icon"><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.666504 0.666656L4.6665 4.66666L8.6665 0.666656" stroke="#333333"
+												stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></span>
+									<select name="sort_by" id="sort_by">
+										<option value="featured">Featured</option>
+										<option value="best_selling">Best selling</option>
+									</select>
+								</div>
 								<div class="collection-grid-btn-wrap">
 									<button class="collection-grid-btn grid2-btn">
 										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -936,18 +928,9 @@
 										</svg>
 									</button>
 								</div>
-								<div class="filter-select-field">
-									<span class="icon"><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path d="M0.666504 0.666656L4.6665 4.66666L8.6665 0.666656" stroke="#333333"
-												stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></span>
-									<select name="sort_by" id="sort_by">
-										<option value="featured">Featured</option>
-										<option value="best_selling">Best selling</option>
-									</select>
-								</div>
 							</div>
+							<p class="collection-product-count">7 products</p>
+							<span class="filter-open-btn">Filter</span>
 						</div>
 						<div class="collection-items grid4">
 							<div class="collection-item">

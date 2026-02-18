@@ -126,14 +126,16 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding: 11px 20px;
+    padding: 5px 20px;
     border-bottom: 1px solid var(--border-color);
+    height: 64px;
 }
 
-.nav-sidebar-top .navbar-logo {
-    height: 42px;
-    margin: 0 !important;
-    padding: 0;
+.sidebar-title p{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: var(--brand-color);
 }
 
 .navbar-links {
@@ -685,9 +687,27 @@
         transition: none;
         height: auto;
         font-size: 16px;
+        text-transform: capitalize;
     }
 
-    .navbar-link:hover .navbar-link-title .icon svg {
+    .navbar-link-title .icon {
+        display: none;
+    }
+
+    .navbar-link:hover .navbar-link-title {
+        background: unset;
+    }
+
+    .navbar-link:hover .navbar-link-title .icon {
+        display: none;
+    }
+
+    .dropdown-btn1.active .icon,
+    .dropdown-btn2.active .icon {
+        display: none;
+    }
+
+    /* .navbar-link:hover .navbar-link-title .icon svg {
         transform: unset;
     }
 
@@ -698,10 +718,10 @@
     .dropdown-btn1.active .icon svg,
     .dropdown-btn2.active .icon svg {
         transform: rotate(180deg);
-    }
+    } */
 
     .navbar-link-content {
-        padding: 10px 0;
+        padding: 0 0 10px 0;
         position: unset;
         width: 100%;
         opacity: 1;
@@ -739,14 +759,15 @@
     }
 
     .navbar-img-link-content-left-item-title {
-        padding: 0 0 10px 10px;
+        padding: 0 0 10px 0;
+        text-transform: capitalize;
     }
 
     .navbar-img-link-content-left-item ul {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding: 0 0 0 20px;
+        padding: 0 0 0 10px;
     }
 
     .navbar-img-link-content-left-item ul li {
@@ -776,6 +797,7 @@
     .navbar-img-link-content-right {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
+        display: none;
     }
 
     .navbar-img-link-content2 .navbar-img-link-content-left {
@@ -822,7 +844,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding: 0 0 0 20px;
+        padding: 0 0 0 10px;
     }
 
     .sub-menu ul li,
@@ -851,6 +873,10 @@
     .dropdown-nav-link-text {
         padding: 0;
         /* font-weight: 500; */
+    }
+
+    .dropdown-nav-link-text .icon {
+        display: none;
     }
 
     /* dropdown css end */

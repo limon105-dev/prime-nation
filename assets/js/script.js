@@ -26,58 +26,6 @@ $(document).ready(function () {
     $("body").removeClass("active");
   });
 
-  // mobile-dropdown responsive accordion js start--
-  $(function () {
-    let isMobile = window.matchMedia(
-      "only screen and (max-width: 992px)"
-    ).matches;
-
-    if (isMobile) {
-      // **..mobile-dropdown-accordion js start..**
-      $(".navbar-link-content").slideDown();
-      $(".navbar-link-title").parent().toggleClass("active");
-      $(".navbar-link-title").on("click", function () {
-        $(this).next(".navbar-link-content").slideToggle();
-        $(this).parent().toggleClass("active");
-        $(this)
-          .parent()
-          .siblings()
-          .removeClass("active")
-          .find(".navbar-link-content")
-          .slideUp();
-      });
-      // **..mobile-dropdown-accordion js end..**
-    }
-
-    // mobile-dropdown responsive accordion js start--
-    $(function () {
-      let isMobile = window.matchMedia(
-        "only screen and (max-width: 992px)"
-      ).matches;
-
-      if (isMobile) {
-        $(".dropdown-sub-menu").slideDown();
-        $(".dropdown-btn1").addClass("active");
-        $(".dropdown-btn2").addClass("active");
-        // **..mobile-dropdown-accordion js start..**
-        $(".dropdown-btn1").on("click", function () {
-          $(this).next(".dropdown-sub-menu1").slideToggle();
-          $(this).toggleClass("active");
-        });
-        // **..mobile-dropdown-accordion js end..**
-
-        // **..mobile-dropdown-accordion js start..**
-        $(".dropdown-btn2").on("click", function () {
-          $(this).next(".dropdown-sub-menu2").slideToggle();
-          $(this).toggleClass("active");
-        });
-        // **..mobile-dropdown-accordion js end..**
-      }
-    });
-    // mobile-dropdown responsive accordion js end--
-  });
-  // mobile-dropdown responsive accordion js end--
-
   $(".search-bar-open-btn").click(function (event) {
     event.stopPropagation();
     $(".search-bar-overlay").addClass("active");
@@ -180,6 +128,23 @@ $(document).ready(function () {
     $("body").removeClass("active");
   });
   // size-chart-sidebar js end---
+
+    // product-details-modal js start--
+  $(".product-details-modal-btn").click(function (event) {
+    event.stopPropagation();
+    $(".product-details-modal-wrap").addClass("active");
+  });
+
+    $(".product-details-modal-window-close-btn").click(function (event) {
+    event.stopPropagation();
+    $(".product-details-modal-wrap").removeClass("active");
+  });
+
+    $(".product-details-modal-close-btn").click(function (event) {
+    event.stopPropagation();
+    $(".product-details-modal-wrap").removeClass("active");
+  });
+  // product-details-modal js end--
 
   // cart-sidebar js start---
   $(".side-cart-btn").click(function (event) {
@@ -369,7 +334,7 @@ var swiper = new Swiper(".side-cart-slider", {
 // product-slider js start---
 var swiper = new Swiper(".product-slider-thumb", {
   direction: "vertical",
-  loop: true,
+  loop: false,
   spaceBetween: 20,
   slidesPerView: 5,
   freeMode: true,

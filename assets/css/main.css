@@ -54,6 +54,7 @@
     --body-color: #fff;
     --item-bg: #dcdcdc;
     --item-bg2: #dcd8d9;
+    --item-bg3: #f5f5f5;
     --section-bg: rgb(46 49 146 / 5%);
     --card-bg: #e5e5e5;
     --card-badge-bg: #f20000;
@@ -650,6 +651,7 @@ button {
 .cart-sidebar-box.active .side-cart-empty {
     display: none;
 }
+
 /* side-cart empty css end */
 
 /* side-cart-product-content css start */
@@ -887,7 +889,7 @@ button {
         padding: 12px 34px;
     }
 
-     /* pagination css start */
+    /* pagination css start */
     .swiper-button-prev,
     .swiper-button-next {
         width: 35px;
