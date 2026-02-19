@@ -95,12 +95,12 @@ $(document).ready(function () {
     $(".product-slider-modal").addClass("active");
   });
 
-    $(".product-slider-modal-close").click(function (event) {
+  $(".product-slider-modal-close").click(function (event) {
     event.stopPropagation();
     $(".product-slider-modal").removeClass("active");
   });
 
-    $(".product-slider-modal").click(function (event) {
+  $(".product-slider-modal").click(function (event) {
     event.stopPropagation();
     $(".product-slider-modal").removeClass("active");
   });
@@ -129,35 +129,31 @@ $(document).ready(function () {
   });
   // size-chart-sidebar js end---
 
-    // product-details-modal js start--
-  // $(".product-details-modal-btn").click(function (event) {
-  //   event.stopPropagation();
-  //   $(".product-details-modal-wrap").addClass("active");
-  // });
+  // product-details-modal js start--
+  document.addEventListener("click", function (event) {
+    const openBtn = event.target.closest(".product-details-modal-btn");
+    const windowCloseBtn = event.target.closest(
+      ".product-details-modal-window-close-btn"
+    );
+    const closeBtn = event.target.closest(".product-details-modal-close-btn");
 
-  //   $(".product-details-modal-window-close-btn").click(function (event) {
-  //   event.stopPropagation();
-  //   $(".product-details-modal-wrap").removeClass("active");
-  // });
+    if (openBtn) {
+      event.stopPropagation();
+      const nextElement = openBtn.nextElementSibling;
+      if (nextElement) nextElement.classList.add("active");
+    }
 
-  //   $(".product-details-modal-close-btn").click(function (event) {
-  //   event.stopPropagation();
-  //   $(".product-details-modal-wrap").removeClass("active");
-  // });
+    if (windowCloseBtn) {
+      event.stopPropagation();
+      const parent = windowCloseBtn.parentElement;
+      if (parent) parent.classList.remove("active");
+    }
 
-    $(".product-details-modal-btn").click(function (event) {
-    event.stopPropagation();
-    $(this).next().addClass("active");
-  });
-
-    $(".product-details-modal-window-close-btn").click(function (event) {
-    event.stopPropagation();
-    $(this).parent().removeClass("active");
-  });
-
-    $(".product-details-modal-close-btn").click(function (event) {
-    event.stopPropagation();
-    $(this).parent().parent().removeClass("active");
+    if (closeBtn) {
+      event.stopPropagation();
+      const grandParent = closeBtn.parentElement?.parentElement;
+      if (grandParent) grandParent.classList.remove("active");
+    }
   });
   // product-details-modal js end--
 
