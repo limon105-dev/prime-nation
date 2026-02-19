@@ -130,19 +130,34 @@ $(document).ready(function () {
   // size-chart-sidebar js end---
 
     // product-details-modal js start--
-  $(".product-details-modal-btn").click(function (event) {
+  // $(".product-details-modal-btn").click(function (event) {
+  //   event.stopPropagation();
+  //   $(".product-details-modal-wrap").addClass("active");
+  // });
+
+  //   $(".product-details-modal-window-close-btn").click(function (event) {
+  //   event.stopPropagation();
+  //   $(".product-details-modal-wrap").removeClass("active");
+  // });
+
+  //   $(".product-details-modal-close-btn").click(function (event) {
+  //   event.stopPropagation();
+  //   $(".product-details-modal-wrap").removeClass("active");
+  // });
+
+    $(".product-details-modal-btn").click(function (event) {
     event.stopPropagation();
-    $(".product-details-modal-wrap").addClass("active");
+    $(this).next().addClass("active");
   });
 
     $(".product-details-modal-window-close-btn").click(function (event) {
     event.stopPropagation();
-    $(".product-details-modal-wrap").removeClass("active");
+    $(this).parent().removeClass("active");
   });
 
     $(".product-details-modal-close-btn").click(function (event) {
     event.stopPropagation();
-    $(".product-details-modal-wrap").removeClass("active");
+    $(this).parent().parent().removeClass("active");
   });
   // product-details-modal js end--
 

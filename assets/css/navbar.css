@@ -707,19 +707,6 @@
         display: none;
     }
 
-    /* .navbar-link:hover .navbar-link-title .icon svg {
-        transform: unset;
-    }
-
-    .navbar-link.active .navbar-link-title .icon svg {
-        transform: rotate(180deg);
-    }
-
-    .dropdown-btn1.active .icon svg,
-    .dropdown-btn2.active .icon svg {
-        transform: rotate(180deg);
-    } */
-
     .navbar-link-content {
         padding: 0 0 10px 0;
         position: unset;
