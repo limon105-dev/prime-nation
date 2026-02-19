@@ -733,6 +733,7 @@
         overflow-y: visible;
         scrollbar-width: none;
         transition: none;
+        z-index: 999;
     }
 
     .navbar-link:hover .navbar-link-content {

@@ -289,7 +289,7 @@ $(function () {
 // card-slider js start--
 var swiper = new Swiper(".card-slider", {
   slidesPerView: 4,
-  spaceBetween: 20,
+  spaceBetween: 5,
   grabCursor: true,
   loop: false,
   navigation: {
@@ -299,37 +299,23 @@ var swiper = new Swiper(".card-slider", {
   breakpoints: {
     // when window width is >= 1px
     1: {
-      spaceBetween: 10,
       slidesPerView: 1.7,
     },
     // when window width is >= 430px
     576: {
-      spaceBetween: 20,
       slidesPerView: 2.3,
     },
     // when window width is >= 767px
     768: {
-      spaceBetween: 20,
       slidesPerView: 3.2,
     },
     // when window width is >= 767px
     993: {
-      spaceBetween: 20,
       slidesPerView: 4,
     },
   },
 });
 // card-slider js end--
-
-// side-cart-slider js start--
-var swiper = new Swiper(".side-cart-slider", {
-  slidesPerView: 2.2,
-  spaceBetween: 10,
-  grabCursor: true,
-  loop: false,
-  speed: 1000,
-});
-// side-cart-slider js end--
 
 // product-slider js start---
 var swiper = new Swiper(".product-slider-thumb", {

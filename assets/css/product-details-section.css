@@ -37,19 +37,21 @@
 
 .product-details-icon-item-content .subtitle {
     margin: 0 0 5px 0;
+    font-weight: 600;
 }
 
 .product-details-icon-item-content .title {
     font-size: 18px;
     line-height: 24px;
     text-transform: capitalize;
+    font-weight: 600;
 }
 
 .product-details-icon-items .line {
     display: block;
     width: 2px;
-    height: -webkit-fill-available;
     background: var(--border-color);
+    height: 143px;
 }
 
 .product-details-section-list {
